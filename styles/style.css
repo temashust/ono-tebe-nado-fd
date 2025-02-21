@@ -1,1 +1,142 @@
-/* место для вашего кода */
+body {
+margin: auto;
+font-family:"Raleway", sans-serif;
+background-color: #f5f5f5;
+}
+/*общий размер заголовка*/
+.header {
+    display:grid;
+    width: 1100px;
+    height: 293px;
+grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    background-color: red;
+    
+}
+/* проверить расстояние с пиксель перфект*/
+.header-menu {
+    display:flex;
+    justify-content:space-around;
+    padding-left: 50px;
+    padding-top: 133px;
+    padding-bottom:138px;
+    gap: 13px;
+    list-style: circle;
+
+.header__links-list-item_no-bullit {
+    list-style: none;
+}
+}
+.logo-img {
+    display: block;
+    width: 148px;
+    height: 105px;
+}
+ .header-adress {
+    display:flex;
+    flex-direction: column;
+     justify-self: end;
+     width: 240px;
+     margin-right: 50px;
+    font-family: "Raleway",sans-serif;
+    font-style: normal;
+    background-color: chartreuse;
+    }
+    .cover  {
+    position: relative;
+    width: 1100px;
+    height: 757px;
+    display: grid;
+    flex-direction: row;
+    background-image: url(../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+    }
+    .title-cover{
+        color: white;
+        display: flex;
+        flex-direction:column;
+        font-family: Raleway,sans-serif;
+        font-weight:bold ;
+        position: relative;
+        z-index: 2;
+        text-transform: uppercase;
+
+    }
+    .word{
+    display: flex;
+    justify-content: start;
+    padding: 164px 0 0 50px;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 115px;
+    letter-spacing: 0.3em;
+    padding:165px 50;
+    }
+    .word_middle{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px 380.5px;
+
+    }
+     .word_right{
+        display: flex;
+        justify-content: end;
+        padding: 0px 50px 0px 0px;
+      
+}
+    .description{
+        display:flex;
+        justify-content: space-between ;
+        width:1000px;
+        height:51px;
+        padding: 106px 0px 50px 0px ;
+        z-index:2;
+        align-items: center;   
+         margin-left: 50px;
+
+       
+    }
+    .subline{
+   font-family: "Raleway",sans-serif;
+   position: relative;
+   font-size: 22px;
+   font-weight: 400;
+   text-align:center ;
+   color: rgba(255, 255, 255, 1);
+   line-height: 28px;
+   word-spacing:  0.9em; 
+   text-transform: uppercase;
+   white-space: nowrap;
+  
+
+} 
+.bet-button{
+    font-family: "Raleway",sans-serif;
+    display: flex;
+    justify-content:center;
+    border: 1px solid white;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+    width:256px ;
+    height: 51px;
+    padding: 12px 0px ;
+    color: #f5f5f5;
+}
+.overlay{
+    position: absolute;
+    inset: 0;
+    background-color:rgba(0, 0, 0, 0.5);
+    z-index:1;
+}
+/*section2*/
+.
+}
+
+
