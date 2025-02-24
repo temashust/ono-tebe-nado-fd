@@ -3,48 +3,63 @@ margin: auto;
 font-family:"Raleway", sans-serif;
 background-color: #f5f5f5;
 }
-/*общий размер заголовка*/
-.header {
-    display:grid;
-    width: 1100px;
-    height: 293px;
-grid-template-columns: 1fr min-content 1fr;
+.header{
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    
-    
+    padding: 92px 50px 96px 50px;
 }
-/* проверить расстояние с пиксель перфект*/
-.header-menu {
-    display:flex;
-    justify-content:space-around;
-    padding-left: 50px;
-    padding-top: 133px;
-    padding-bottom:138px;
-    gap: 13px;
-    list-style: circle;
+    .header-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+    .header__links-list{
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    background-color: red;
     text-underline-offset: 5px;
 
-.header__links-list-item_no-bullit {
-    list-style: none;
+    
 }
+    .header__links-list-item{
+    line-height: 21.13px;
+    background-color: blueviolet;
+    list-style: circle;
+
 }
-.logo-img {
+    .header__links-list-item_no-bullit{
+     list-style: none;
+
+}
+
+    .header__logo{
     display: block;
-    width: 148px;
-    height: 105px;
+     width: 134px;
 }
- .header-adress {
-    display:flex;
-    flex-direction: column;
-     justify-self: end;
-     width: 240px;
-     margin-right: 50px;
-    font-family: "Raleway",sans-serif;
-    font-size:18px ;
+    .header__logo-image{
+    width:100%;
+
+}
+    .adress{
+    display: flex;
+    flex-direction:column;
+    width: 240px;
+    justify-self: end;
+    row-gap: 5px;
+    font-family: "Raleway", sans-serif;
     font-style: normal;
+    font-size: 18px;
+    background-color: blue;
     text-underline-offset: 5px;
-   
-    }
+}
+
+/*section1*/
+
     .cover  {
     position: relative;
     width: 1100px;
@@ -289,7 +304,7 @@ grid-template-columns: 1fr min-content 1fr;
     background-color: aquamarine;
 }
 
-.adress{
+/*.adress{
     display:flex;
     flex-direction: column;
      justify-self: center;
@@ -299,6 +314,7 @@ grid-template-columns: 1fr min-content 1fr;
     font-style: normal;
     background-color: chartreuse;
 }
+    */
 .footer__menu{
     display:flex;
     justify-content:space-around;
@@ -315,7 +331,7 @@ footer__menu-link_active
     display: flex;
     flex-direction: column;
 }
-.footer__social-list-item{
+/*.footer__social-list-item{
     display: grid;
     flex-direction: row;
     justify-content: center;
