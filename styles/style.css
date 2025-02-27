@@ -39,7 +39,7 @@
   width:100%;
 }
 
-.adress{
+.adress {
   display: flex;
   flex-direction:column;
   justify-self: end;
@@ -55,7 +55,7 @@
   justify-self: end;
 }
 
-/*section1*/
+
 
 .cover {
   position: relative;
@@ -88,7 +88,6 @@
   font-size: 100px;
   line-height: 115px;
   letter-spacing: 0.3em;
-  padding:165px 50;
 }
 
 .word_middle {
@@ -149,7 +148,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-/*section2*/
+
 .lots {
   display: block;
   margin: 180px 24px 120px 24px ;
@@ -244,7 +243,7 @@
 }
 
 
-/*section3*/
+
 .about {
   display:grid;
   grid-template-columns: 334px 1fr;
@@ -295,7 +294,7 @@
   padding-left: 24px;
 }
 
-/*footer*/
+
 
 .footer {
   display: grid;
@@ -336,7 +335,7 @@
 .footer__social-list-item {
   display: flex;
   justify-content: center;
-  column-gap:  48px;
+  column-gap: 48px;
 }
 
 .footer__social-icon {
