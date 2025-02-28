@@ -10,6 +10,9 @@
   flex-direction: row;
   justify-content: space-between;
 }
+.no_active_link{
+text-decoration: none
+  }
 
 .header__links-list {
   display: flex;
@@ -39,7 +42,7 @@
   width:100%;
 }
 
-.adress {
+.address {
   display: flex;
   flex-direction:column;
   justify-self: end;
@@ -55,12 +58,10 @@
   justify-self: end;
 }
 
-
-
 .cover {
   position: relative;
   width: 1100px;
-  height: 757px;
+  min-height: 757px;
   display: grid;
   flex-direction: row;
   background-image: url(../images/cover.jpg);
@@ -70,100 +71,97 @@
 }
 
 .title-cover {
-  color: white;
-  display: flex;
-  flex-direction:column;
-  font-family: Raleway,sans-serif;
-  font-weight:bold ;
   position: relative;
   z-index: 2;
+}
+/*выровняли элементы оно тебе надобтеперь не выходят за рамки.*/
+/*добавил общий переиспользуемый класс текст*/
+.text {
+  font-family: Raleway,sans-serif,bold;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115px;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
+  color: white;
 }
 
 .word {
   display: flex;
   justify-content: start;
   padding: 164px 0 0 50px;
-  font-weight: 700;
-  font-size: 100px;
-  line-height: 115px;
-  letter-spacing: 0.3em;
+
 }
 
 .word_middle {
   text-align: center;
   display: flex;
   justify-content: center;
-  padding: 20px 380.5px;
+  padding: 18px 0px 0px 28px;
 }
 
 .word_right {
   display: flex;
   justify-content: end;
-  padding: 0px 50px 0px 0px;
+  padding: 18px 20px 0px 0px;
 }
-
+/*убрал высоту у дескрипшн*/
 .description {
   display:flex;
   justify-content: space-between ;
   width: 1000px;
-  height: 51px;
   padding: 106px 0px 50px 0px ;
   z-index:2;
   align-items: center;
   margin-left: 50px;
 }
-
+/*подогнал текст по шаблону фигма ,а иенно исправил word spacing*/
 .subline {
   font-family: "Raleway",sans-serif;
   position: relative;
   font-size: 22px;
   font-weight: 400;
   text-align:center ;
-  color: rgba(255, 255, 255, 1);
+  color: white;
   line-height: 28px;
-  word-spacing:  0.9em;
+  word-spacing: 18.3px;
   text-transform: uppercase;
   white-space: nowrap;
 }
-
+/*убрал высоту и флекс ,заменил на блочный элемент*/
 .bet-button {
-  font-family: "Raleway",sans-serif;
-  display: flex;
+  display: block;
   justify-content:center;
   border: 1px solid white;
   background-color: transparent;
   font-weight: 500;
+  font-family: "Raleway",sans-serif;
   font-size: 22px;
   text-transform: uppercase;
   width: 256px ;
-  height: 51px;
   padding: 12px 0px ;
   color: #f5f5f5;
 }
-
+/*исправиль прозрачность оверлея*/
 .overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
-
+/*убрал высоту */
 .lots {
   display: block;
-  margin: 180px 24px 120px 24px ;
-  height: 723px;
-  width: 1052px;
-}
-
+  margin-top: 180px;
+  margin-left:24px;
+  }
+/*убрал высоту */
 .lots_heading {
   display: block;
   font-family: "Raleway", sans-serif, bold;
   text-align: start;
   text-transform: uppercase;
   font-weight: 700;
-  width: 121px;
-  height: 47px;
   font-size: 40px;
   padding: 0px 173px 27px 40px ;
 }
@@ -173,38 +171,36 @@
   grid-template-columns: repeat(3,334px);
   gap: 25px;
   padding-top: 27px;
-}
 
+}
+/*исправил min-height*/
 .lots_card-list-item {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 334px;
-  height: 596px;
-  list-style-type:none;
+  min-height: 596px;
+
   padding: 48px 40px 48px 40px;
 }
-
-.card_type_film {
-  background-image: url(../images/card-lot-01.jpg);
+/*создал общий класс*/
+.card {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  list-style-type:none;
+}
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_title {
@@ -232,8 +228,9 @@
   line-height: 24px;
 }
 
+/*заменил на блочный элемент*/
 .lots__look-more-link {
-  display: flex;
+  display: block;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -242,14 +239,11 @@
   padding: 30px 102px 2px 40px;
 }
 
-
-
 .about {
   display:grid;
   grid-template-columns: 334px 1fr;
   margin: 120px 24px 180px 24px ;
   width: 1052px;
-  max-height:595px ;
 }
 
 .about_logo {
@@ -278,31 +272,26 @@
   text-transform: uppercase;
 }
 
-.about_text_1 {
+.about_text {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 20px;
+  padding-left: 24px;
+}
+
+.description_about {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   padding-top: 100px;
-  padding-bottom: 24px;
-  padding-left: 24px;
 }
-
-.about_text_2 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  padding-left: 24px;
-}
-
 
 .footer {
   display: grid;
   grid-template-columns: repeat(3,1fr);
+  align-content: center;
   flex-direction: row;
-  width: 1100px;
-  height: 180px;
-  margin-top: 180px;
-  padding-left: 165px;
+  padding:0px 50px 82px 50px;
 }
 
 .footer_adress {
@@ -313,13 +302,11 @@
   display: flex;
   flex-direction: column;
   justify-self: center;
-  max-width: 164px;
 }
 
 .footer__menu-list {
   display: flex;
   flex-direction: column;
-  row-gap: 3px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -330,13 +317,13 @@
 
 .footer__social-list {
   display: flex;
-  flex-direction: row;
+  justify-content: right;
+  column-gap: 48px;
 }
 
 .footer__social-list-item {
-  display: flex;
-  justify-content: right;
-  column-gap: 48px;
+  display: block;
+  list-style: none;
 }
 
 .footer__social-icon {
