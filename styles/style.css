@@ -10,9 +10,9 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.no_active_link{
-text-decoration: none
-  }
+.no_active_link {
+  text-decoration: none;
+}
 
 .header__links-list {
   display: flex;
