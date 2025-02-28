@@ -152,8 +152,8 @@
 /*убрал высоту */
 .lots {
   display: block;
-  padding: 180px 24px 146px 24px;
-  ;
+  padding: 180px 24px 120px 24px;
+
   }
 /*убрал высоту */
 .lots_heading {
@@ -163,7 +163,7 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 40px;
-  padding: 0px 173px 27px 40px ;
+  padding: 0px 173px 0px 40px ;
 }
 
 .lots_card-list {
@@ -236,15 +236,13 @@
   font-size: 20px;
   line-height: 24px;
   text-underline-offset: 5px;
-  padding: 30px 102px 2px 40px;
+  padding: 30px 102px 0px 40px;
 }
 
 .about {
-  display:grid;
+  display: grid;
   grid-template-columns: 334px 1fr;
-  margin: 120px 24px 180px 24px ;
-  width: 1052px;
-  background-color: blueviolet;
+  margin: 0px 24px 180px 24px;
 }
 
 .about_logo {
@@ -278,6 +276,7 @@
   font-weight: 400;
   font-size: 20px;
   padding-left: 24px;
+  line-height: 24px;
 }
 
 .description_about {
