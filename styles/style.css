@@ -10,7 +10,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.no_active_link {
+.active_link {
   text-decoration: none;
 }
 
@@ -77,6 +77,7 @@
 /*выровняли элементы оно тебе надобтеперь не выходят за рамки.*/
 /*добавил общий переиспользуемый класс текст*/
 .text {
+  display: flex;
   font-family: Raleway,sans-serif,bold;
   font-weight: 700;
   font-size: 100px;
@@ -87,21 +88,17 @@
 }
 
 .word {
-  display: flex;
   justify-content: start;
   padding: 164px 0 0 50px;
-
 }
 
 .word_middle {
   text-align: center;
-  display: flex;
   justify-content: center;
   padding: 18px 0px 0px 28px;
 }
 
 .word_right {
-  display: flex;
   justify-content: end;
   padding: 18px 20px 0px 0px;
 }
@@ -181,7 +178,6 @@
   justify-content: space-between;
   width: 334px;
   min-height: 596px;
-
   padding: 48px 40px 48px 40px;
 }
 /*создал общий класс*/
