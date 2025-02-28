@@ -152,8 +152,8 @@
 /*убрал высоту */
 .lots {
   display: block;
-  margin-top: 180px;
-  margin-left:24px;
+  padding: 180px 24px 146px 24px;
+  ;
   }
 /*убрал высоту */
 .lots_heading {
@@ -244,6 +244,7 @@
   grid-template-columns: 334px 1fr;
   margin: 120px 24px 180px 24px ;
   width: 1052px;
+  background-color: blueviolet;
 }
 
 .about_logo {
